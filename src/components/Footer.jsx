@@ -1,0 +1,75 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+const Footer = () => {
+  return (
+    <footer style={{ background: 'var(--bg-surface)', padding: '80px 0 40px', borderTop: '1px solid var(--border-light)' }}>
+      <div className="container">
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '64px', marginBottom: '64px' }} className="footer-grid">
+          <div style={{ gridColumn: 'span 2' }}>
+            <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 800, fontSize: '1.25rem', letterSpacing: '-0.02em', color: 'var(--text-primary)' }}>
+              <img src="/logo.png" alt="Orlin AI Logo" style={{ height: '32px' }} onError={(e) => { e.target.style.display = 'none' }} />
+             AI
+            </Link>
+            <p style={{ color: 'var(--text-secondary)', margin: '16px 0 24px', maxWidth: '300px' }}>
+              Building the nervous system for modern real estate brokerages. Convert more leads, automatically.
+            </p>
+            <div style={{ display: 'flex', gap: '16px', marginTop: '16px' }}>
+              <a href="#" style={{ color: 'var(--text-secondary)' }} aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+              <a href="#" style={{ color: 'var(--text-secondary)' }} aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+              <a href="#" style={{ color: 'var(--text-secondary)' }} aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+            </div>
+          </div>
+          
+          <div className="footer-col">
+            <h4 style={{ fontSize: '0.875rem', fontWeight: 700, marginBottom: '24px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Pages</h4>
+            <ul>
+              <li style={{ marginBottom: '12px' }}><Link to="/" style={{ color: 'var(--text-secondary)' }}>Home</Link></li>
+              <li style={{ marginBottom: '12px' }}><Link to="/solutions" style={{ color: 'var(--text-secondary)' }}>Solutions</Link></li>
+              <li style={{ marginBottom: '12px' }}><Link to="/case-studies" style={{ color: 'var(--text-secondary)' }}>Case Studies</Link></li>
+              <li style={{ marginBottom: '12px' }}><Link to="/about" style={{ color: 'var(--text-secondary)' }}>About Us</Link></li>
+            </ul>
+          </div>
+
+          <div className="footer-col">
+            <h4 style={{ fontSize: '0.875rem', fontWeight: 700, marginBottom: '24px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Capabilities</h4>
+            <ul>
+              <li style={{ marginBottom: '12px' }}><a href="/#solutions" style={{ color: 'var(--text-secondary)' }}>Lead Capture</a></li>
+              <li style={{ marginBottom: '12px' }}><a href="/#solutions" style={{ color: 'var(--text-secondary)' }}>AI Qualification</a></li>
+              <li style={{ marginBottom: '12px' }}><a href="/#solutions" style={{ color: 'var(--text-secondary)' }}>Appointment Booking</a></li>
+              <li style={{ marginBottom: '12px' }}><a href="/#solutions" style={{ color: 'var(--text-secondary)' }}>CRM Integration</a></li>
+            </ul>
+          </div>
+          
+          <div className="footer-col">
+            <h4 style={{ fontSize: '0.875rem', fontWeight: 700, marginBottom: '24px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Legal</h4>
+            <ul>
+              <li style={{ marginBottom: '12px' }}><Link to="#" style={{ color: 'var(--text-secondary)' }}>Privacy Policy</Link></li>
+              <li style={{ marginBottom: '12px' }}><Link to="#" style={{ color: 'var(--text-secondary)' }}>Terms of Service</Link></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div style={{ paddingTop: '32px', borderTop: '1px solid var(--border-light)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', color: 'var(--text-secondary)', fontSize: '0.875rem' }} className="footer-bottom">
+          <span>&copy; 2026 Orlin AI. All rights reserved.</span>
+          <span style={{ fontSize: '0.75rem', opacity: 0.8, position: 'relative' }}>
+            Made by <a href="https://piyushratan.in" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>Piyush</a>
+            {/* DO NOT REMOVE - Builder Credit */}
+            <a href="https://piyushratan.in" target="_blank" rel="noopener noreferrer" style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: 0 }}>Built by Piyush Ratan</a>
+          </span>
+          <span>System Status: <strong style={{ color: 'var(--success)' }}>100% Operational</strong></span>
+        </div>
+      </div>
+
+      <style>{`
+        .footer-col a:hover { color: var(--accent) !important; }
+        @media (max-width: 768px) {
+          .footer-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+          .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+        }
+      `}</style>
+    </footer>
+  );
+};
+
+export default Footer;
