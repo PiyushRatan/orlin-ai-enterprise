@@ -139,7 +139,7 @@ const CaseStudiesPage = () => {
 
       <section className="container section-pad" style={{ textAlign: 'center' }}>
         <h2 className="h2" style={{ marginBottom: '24px' }}>Ready for results like these?</h2>
-        <a href="#book" className="btn btn-primary">Book Your Strategy Call</a>
+        <a href="https://calendly.com/orlinskybound05/30min" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Your Free AI Strategy Call</a>
       </section>
     </div>
   );

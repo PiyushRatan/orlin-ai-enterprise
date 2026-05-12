@@ -166,7 +166,7 @@ const Hero = () => {
           <p ref={leadRef} className="text-lead" style={{ marginBottom: '40px' }}>We build custom AI systems for brokerages that instantly capture, qualify, and book property leads directly to your CRM.</p>
 
           <div ref={buttonsRef} style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', alignItems: 'center' }} className="hero-buttons">
-            <MagneticButton href="tel:+918179891195" className="btn btn-primary">Book a Strategy Call</MagneticButton>
+            <MagneticButton href="https://calendly.com/orlinskybound05/30min" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Book Your Free AI Strategy Call</MagneticButton>
             <a href="#process" className="btn btn-secondary">See How It Works</a>
           </div>
 

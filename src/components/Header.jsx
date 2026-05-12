@@ -79,7 +79,7 @@ const Header = () => {
         </nav>
 
         <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
-          <a href="#book" className="btn btn-primary desktop-btn">Book Strategy Call</a>
+          <a href="https://calendly.com/orlinskybound05/30min" target="_blank" rel="noopener noreferrer" className="btn btn-primary desktop-btn">Book Free Strategy Call</a>
           <button 
             style={{ display: 'block', padding: '8px', color: 'var(--text-primary)', background: 'none', border: 'none', cursor: 'pointer', position: 'relative', zIndex: 100000 }} 
             className="mobile-toggle"
@@ -128,7 +128,7 @@ const Header = () => {
         <Link to="/about" onClick={() => setMobileMenuOpen(false)} style={{ fontSize: '1.125rem', fontWeight: 500, color: 'var(--text-primary)' }}>About</Link>
         
         <div style={{ marginTop: 'auto', paddingBottom: '32px', paddingTop: '16px' }}>
-          <a href="#book" onClick={() => setMobileMenuOpen(false)} className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>Book Strategy Call</a>
+          <a href="https://calendly.com/orlinskybound05/30min" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)} className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>Book Free Strategy Call</a>
         </div>
       </div>
 
